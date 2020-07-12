@@ -4,6 +4,8 @@ const $saveNoteBtn = $(".save-note");
 const $newNoteBtn = $(".new-note");
 const $noteList = $(".list-container .list-group");
 
+
+
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
 
@@ -14,6 +16,10 @@ const getNotes = () => {
     method: "GET",
   });
 };
+
+getNotes().then((data)=>{
+console.log(data);
+});
 
 // A function for saving a note to the db
 const saveNote = (note) => {

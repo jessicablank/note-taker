@@ -1,6 +1,7 @@
 const express = require("express");
 const setupApiRoutes = require("./routes/apiRoutes");
 const setupHtmlRoutes = require("./routes/htmlRoutes");
+
 // This sets up the basic properties for our express server and tells node that
 // we are creating an "express" server
 const app = express();
@@ -9,9 +10,10 @@ const app = express();
 // for the server.
 const PORT = process.env.PORT || 8080;
 
-// Sets up the Express app to handle data parsing
+// Sets up the Express app to handle data parsing.
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static("public"));
 
 // The code below points the server to a series of "route" files. These routes
 // give our server a "map" of how to respond when users visit or request data
