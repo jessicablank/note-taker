@@ -16,6 +16,7 @@
 Requires NodeJS 10+. First, install dependencies with `npm install`. Then run `node server.js` or `nodemon` to start the app. 
 
 ## Usage
+[Link to Heroku Deployed App](https://dry-crag-42001.herokuapp.com/)
 ![Demonstration](https://github.com/jessicablank/note-taker/blob/master/demo.gif)
 ![Homepage](https://github.com/jessicablank/note-taker/blob/master/homepage.PNG)
 From the home screen, press "Get Started" to see your notes. Enter a note title and note text in the correct fields and hit the "save" icon to move those notes to the left of the page. You can click the previous note titles to see note text from previously saved notes. Click the trash bin icon to delete completed notes. 
@@ -24,7 +25,8 @@ From the home screen, press "Get Started" to see your notes. Enter a note title 
 Create a pull request. 
 
 ## Tests
-add info about seeing the api here
+`/notes` should display the notes page: [https://dry-crag-42001.herokuapp.com/notes](https://dry-crag-42001.herokuapp.com/notes)
+`/literallyanythingelse` should display the home page [https://dry-crag-42001.herokuapp.com/](https://dry-crag-42001.herokuapp.com/)
 
 ## Questions
 You can reach the author, Jessica Blankemeier,  via [github](http://github.com/jessicablank) and [email](mailto:jessicablankemeier@gmail.com)
