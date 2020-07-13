@@ -30,7 +30,7 @@ module.exports = function (app) {
  //showing the active note when the user clicks on it
  app.get("/api/notes/:id", (request, response)=>{
    var chosenNote = notes.filter((each)=>each.id === Number(request.params.id))
-   console.log(request.params.id)
+   activeNote = chosenNote;
    response.send("Unique id is randomly generated for each note");
 })
 }
