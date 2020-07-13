@@ -1,5 +1,5 @@
 let notes = require("../db/db.json")
-const { response } = require("express")
+
 
 
 
@@ -20,17 +20,17 @@ module.exports = function (app) {
     response.json(newNote);
  })
 
- //deleting the note from the databse
+ //deleting the note from the database
  app.delete("/api/notes/:id", (request, response)=>{
     var noteswithOneRemoved = notes.filter((each)=>each.id !== Number(request.params.id))
     notes = noteswithOneRemoved;
-    response.send("works");
+    response.send("Unique id is randomly generated for each note.");
  })
 
- //Shows the active note
+ //showing the active note when the user clicks on it
  app.get("/api/notes/:id", (request, response)=>{
    var chosenNote = notes.filter((each)=>each.id === Number(request.params.id))
    console.log(request.params.id)
-   response.send("works");
+   response.send("Unique id is randomly generated for each note");
 })
 }
