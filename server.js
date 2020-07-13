@@ -1,8 +1,7 @@
 const express = require("express");
 const setupApiRoutes = require("./routes/apiRoutes");
 const setupHtmlRoutes = require("./routes/htmlRoutes");
-const path = require('path');
-const fs = require("fs");
+
 
 
 // This sets up the basic properties for our express server and tells node that
