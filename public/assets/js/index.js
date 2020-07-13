@@ -17,9 +17,6 @@ const getNotes = () => {
   });
 };
 
-getNotes().then((data)=>{
-console.log(data);
-});
 
 // A function for saving a note to the db
 const saveNote = (note) => {
@@ -74,7 +71,9 @@ const handleNoteDelete = function (event) {
   event.stopPropagation();
 
   const note = $(this).parent(".list-group-item").data();
-
+  console.log(activeNote.id)
+  console.log(note.id)
+  console.log(note)
   if (activeNote.id === note.id) {
     activeNote = {};
   }
