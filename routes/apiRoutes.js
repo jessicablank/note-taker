@@ -1,9 +1,5 @@
 let notes = require("../db/db.json")
-
-
-
-
-
+const { v4: uuidv4 } = require("uuid");
 
 module.exports = function (app) {
    //get notes from the database
@@ -15,7 +11,7 @@ module.exports = function (app) {
  //unique id
  app.post("/api/notes", (request, response)=>{
     const newNote = request.body;
-    newNote.id = Number(Math.random().toString().slice(2,13));
+    newNote.id = uuidv4();
     notes.push(newNote);
     response.json(newNote);
  })
