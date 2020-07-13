@@ -27,6 +27,10 @@ Create a pull request.
 ## Tests
 `/notes` should display the notes page: [https://dry-crag-42001.herokuapp.com/notes](https://dry-crag-42001.herokuapp.com/notes)
 `/literallyanythingelse` should display the home page [https://dry-crag-42001.herokuapp.com/](https://dry-crag-42001.herokuapp.com/)
+`/api notes` should display the Json file with saved notes ![JSON](https://github.com/jessicablank/note-taker/blob/master/JSON.PNG)
+WHEN the user creates a new note, THEN the note is saved.
+WHEN the user clicks on a previously saved note, THEN the note text is displayed. 
+WHEN The user deletes a note, THEN the note is no longer visible. 
 
 ## Questions
 You can reach the author, Jessica Blankemeier,  via [github](http://github.com/jessicablank) and [email](mailto:jessicablankemeier@gmail.com)
