@@ -9,14 +9,13 @@
 ## Table of Contents:
 * [Installation](#installation-instructions)
 * [Usage](#usage)
-* [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
 * [License](#license-info)
 
 ## Installation Instructions
 * Requires NodeJS 10+ with modules plus npm express and npm uuid
-* `npm install`. 
+* `npm install`
 * `npm install uuid`
 * `npm install express`
 * Then run `node server.js` or `nodemon` to start the app. 
