@@ -1,4 +1,4 @@
-let notes = require("../db/db.json")
+let notes = require("../db/db.json");
 const { v4: uuidv4 } = require("uuid");
 
 module.exports = function (app) {
@@ -18,15 +18,15 @@ module.exports = function (app) {
 
  //deleting the note from the database
  app.delete("/api/notes/:id", (request, response)=>{
-    var noteswithOneRemoved = notes.filter((each)=>each.id !== Number(request.params.id))
+    var noteswithOneRemoved = notes.filter((each)=>each.id !== (request.params.id))
     notes = noteswithOneRemoved;
-    response.send("Unique id is randomly generated for each note.");
+    response.send("Unique id is randomly generated for each note thanks to npm uuid.");
  })
 
  //showing the active note when the user clicks on it
  app.get("/api/notes/:id", (request, response)=>{
-   var chosenNote = notes.filter((each)=>each.id === Number(request.params.id))
+   var chosenNote = notes.filter((each)=>each.id === (request.params.id))
    activeNote = chosenNote;
-   response.send("Unique id is randomly generated for each note");
+   response.send("Unique id is randomly generated for each note thanks to npm uuid.");
 })
 }
